@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 0.2s linear;
   }
 }
 
@@ -27,6 +27,63 @@
 .App-link {
   color: #61dafb;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative; /* Add this line */
+}
+
+.container {
+  flex-grow: 1;
+  padding-bottom: 10px; /* Adjust the value to include the height of the footer */
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa; /* Customize the background color if needed */
+  padding: 20px;
+}
+
+.button-container {
+  display: flex;
+  margin-top: 1px;
+}
+.btn-danger {
+  margin-left: 4px;
+}
+.btn-warning{
+  margin-left: 3px;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+.btn-text2 {
+  margin-right: 0.5rem;
+  border-radius: 0.25rem;
+ background-color: rgb(243, 6, 6);
+ padding: 6px;
+}
+
 
 @keyframes App-logo-spin {
   from {
